@@ -502,6 +502,60 @@ button {
 
 
 /* ═══════════════════════════════════════════
+   QUEM SOMOS
+   ═══════════════════════════════════════════ */
+.quem-somos-block {
+  margin-bottom: 72px;
+}
+
+.quem-somos-block h3 {
+  font-family: 'Playfair Display', serif;
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: var(--navy);
+  text-align: center;
+  margin-bottom: 32px;
+}
+
+.quem-somos-content {
+  background: var(--white);
+  border: 1px solid var(--gray-100);
+  border-radius: var(--radius-lg);
+  padding: 36px 40px;
+  box-shadow: var(--shadow);
+  position: relative;
+  overflow: hidden;
+}
+
+.quem-somos-content::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 4px;
+  height: 100%;
+  background: linear-gradient(to bottom, var(--gold), var(--gold-light));
+  border-radius: 4px 0 0 4px;
+}
+
+.quem-somos-content p {
+  color: var(--gray-600);
+  font-size: 1rem;
+  line-height: 1.8;
+  margin-bottom: 16px;
+}
+
+.quem-somos-content p:last-child {
+  margin-bottom: 0;
+}
+
+.quem-somos-content strong {
+  color: var(--navy);
+  font-weight: 600;
+}
+
+
+/* ═══════════════════════════════════════════
    CARDS — Diferenciais
    ═══════════════════════════════════════════ */
 .cards-section h3 {
@@ -1013,6 +1067,15 @@ button {
   text-transform: uppercase;
 }
 
+.footer-cnpj {
+  margin-top: 16px;
+  color: var(--gray-400);
+  font-size: 0.82rem;
+  font-weight: 400;
+  letter-spacing: 0.02em;
+  opacity: 0.7;
+}
+
 
 /* ═══════════════════════════════════════════
    RESPONSIVE
@@ -1080,6 +1143,10 @@ button {
   .visual-card {
     padding: 10px 14px;
     font-size: 0.8rem;
+  }
+
+  .quem-somos-content {
+    padding: 28px 24px;
   }
 
   .orcamento-section {
