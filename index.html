@@ -1,223 +1,290 @@
 <!DOCTYPE html>
-<html>
-
+<html lang="pt-BR">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>AluraBooks</title>
-  <link rel="stylesheet" href="reset.css">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
-  <link rel="stylesheet" href="styles.css">
+  <meta name="description" content="Portal da Assessoria Acadêmica – soluções práticas e orientação especializada para seu projeto acadêmico.">
+  <meta name="keywords" content="Assessoria acadêmica, orientação acadêmica, serviços acadêmicos, suporte estudantil">
+  <meta name="author" content="Assessoria Acadêmica">
+  <!-- Open Graph / Facebook -->
+  <meta property="og:title" content="Portal da Assessoria Acadêmica">
+  <meta property="og:description" content="Suporte especializado e soluções práticas para suas demandas acadêmicas.">
+  <meta property="og:image" content="assets/logo.png">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="#">
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <!-- Font Awesome Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" integrity="sha512-CuirpKgF9G7jaekqyzxxx" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="style.css">
+  <title>Portal da Assessoria Acadêmica</title>
 </head>
-
 <body>
-  <header class="cabeçalho">
-    <div class="container">
-      <input type="checkbox" id="menu" class="container__botao">
-      <label for="menu">
-        <span class="cabeçalho__menu-hamburguer container__imagem"></span>
-      </label>
-      <ul class="lista-menu">
-        <li class="lista-menu__titulo">Categorias</li>
-        <li class="lista-menu__item">
-          <a href="#" class="lista-menu__link">Programação</a>
-        </li>
-        <li class="lista-menu__item">
-          <a href="#" class="lista-menu__link">Front-end</a>
-        </li>
-        <li class="lista-menu__item">
-          <a href="#" class="lista-menu__link">Infraestrutura</a>
-        </li>
-        <li class="lista-menu__item">
-          <a href="#" class="lista-menu__link">Business</a>
-        </li>
-        <li class="lista-menu__item">
-          <a href="#" class="lista-menu__link">Design & UX</a>
-        </li>
+  <header id="top">
+    <nav class="navbar">
+      <div class="logo-container">
+        <img src="assets/logo.png" alt="Logo Assessoria Acadêmica">
+        <span>Assessoria Acadêmica</span>
+      </div>
+      <button class="burger" aria-label="Abrir menu">
+        <i class="fa fa-bars"></i>
+      </button>
+      <ul class="nav-links">
+        <li><a href="#about">Sobre</a></li>
+        <li><a href="#features">Diferenciais</a></li>
+        <li><a href="#process">Processo</a></li>
+        <li><a href="#testimonials">Depoimentos</a></li>
+        <li><a href="#faq">FAQ</a></li>
+        <li><a href="#contact">Orçamento</a></li>
       </ul>
-      <img src="img/Logo.svg" alt="Logo da Alurabooks" class="container__imagem">
-    </div>
-    <div class="container">
-      <a href="#"><img src="img/Favoritos.svg" alt="Meus favoritos" class="container__imagem"></a>
-      <a href="#"><img src="img/Compras.svg" alt="Carrinhos de compras" class="container__imagem"></a>
-      <a href="#"><img src="img/Usuario.svg" alt="Meu perfil" class="container__imagem"></a>
+    </nav>
+    <div class="hero">
+      <div class="hero-overlay"></div>
+      <div class="hero-content">
+        <h1>Suporte acadêmico de excelência</h1>
+        <p>Orientação especializada, organização e agilidade para ajudar você a alcançar seus objetivos acadêmicos.</p>
+        <a href="#contact" class="btn btn-primary">Solicitar orçamento</a>
+      </div>
     </div>
   </header>
 
-  <section class="banner">
-    <h2 class="banner__titulo">Já sabe por onde começar?</h2>
-    <p class="banner__texto">Encontre em nossa estante o que precisa para seu desenvolvimento!</p>
-    <input type="search" class="banner__pesquisa" placeholder="Qual será sua próxima leitura?">
-  </section>
-
-  <section class="carrossel">
-    <h2 class="carrossel__titulo">Novos lançamentos</h2>
-    <!-- Slider main container -->
-    <div class="swiper">
-      <!-- Additional required wrapper -->
-      <div class="swiper-wrapper">
-        <!-- Slides -->
-        <div class="swiper-slide"><img src="img/Apachekafka.svg"
-            alt="Livro sobre apache kafka e spring boot da alura books"></div>
-        <div class="swiper-slide"><img src="img/Liderança.svg"
-            alt="Livro sobre liderança em design design da alura books"></div>
-        <div class="swiper-slide"><img src="img/Javascript.svg" alt="Livro sobre javascript assertivo da alura books">
-        </div>
-        <div class="swiper-slide">
-          <img src="img/Guia Front-end.svg" alt="Livro Guia front end" />
-        </div>
-        <div class="swiper-slide">
-          <img src="img/Portugol.svg" alt="Livro sobre portugol" />
-        </div>
-        <div class="swiper-slide">
-          <img src="img/Acessibilidade.svg" alt="Livro sobre acessibilidade" />
+  <main>
+    <!-- Sobre -->
+    <section id="about" class="section">
+      <div class="container">
+        <h2 class="section-title">Sobre a Assessoria</h2>
+        <p class="section-description">
+          Somos uma equipe dedicada a oferecer apoio personalizado aos estudantes em suas demandas acadêmicas.
+          Com experiência e compromisso, fornecemos orientação, clareza e organização para atividades, projetos e trabalhos acadêmicos.
+        </p>
+        <div class="about-grid">
+          <div class="about-text">
+            <h3>Nosso compromisso</h3>
+            <p>
+              Acreditamos que cada estudante merece um acompanhamento individualizado, com transparência e foco no
+              desenvolvimento de suas competências. Nossa assessoria atua como parceira no processo de
+              aprendizagem, auxiliando na estruturação e no cumprimento de requisitos acadêmicos.
+            </p>
+            <p>
+              Ao escolher nossa assessoria, você recebe suporte contínuo em todas as etapas do seu trabalho, da
+              concepção à finalização, garantindo um resultado consistente e alinhado às suas expectativas.
+            </p>
+          </div>
+          <div class="about-image">
+            <img src="assets/hero-bg.png" alt="Ilustração de colaboração acadêmica">
+          </div>
         </div>
       </div>
+    </section>
 
-      <!-- If we need navigation buttons -->
-      <div class="swiper-button-prev"></div>
-      <div class="swiper-button-next"></div>
-
-    </div>
-
-    <div class="card">
-      <div class="card__descrição">
-        <div class="descrição">
-          <h3 class="descrição__titulo">Talvez você também se interesse por...</h3>
-          <h2 class="descrição__titulo-livro">Angular 11 e Firebase</h2>
-          <p class="descrição__texto">
-            Construindo uma aplicação integrada com a plataforma do Google.
-          </p>
+    <!-- Diferenciais -->
+    <section id="features" class="section alt-section">
+      <div class="container">
+        <h2 class="section-title">Nossos Diferenciais</h2>
+        <p class="section-description">
+          Conheça as qualidades que tornam nosso serviço único e eficaz para seu sucesso acadêmico.
+        </p>
+        <div class="features-grid">
+          <div class="feature-card">
+            <i class="fa-solid fa-person-circle-question"></i>
+            <h3>Atendimento Individualizado</h3>
+            <p>Alinhamos nossas estratégias às suas necessidades específicas e estilo de aprendizagem.</p>
+          </div>
+          <div class="feature-card">
+            <i class="fa-solid fa-lightbulb"></i>
+            <h3>Clareza e Organização</h3>
+            <p>Estruturamos as informações de forma simples, tornando cada etapa do projeto transparente.</p>
+          </div>
+          <div class="feature-card">
+            <i class="fa-solid fa-bolt"></i>
+            <h3>Agilidade no Suporte</h3>
+            <p>Oferecemos respostas rápidas e direcionamentos precisos para que você progrida sem obstáculos.</p>
+          </div>
+          <div class="feature-card">
+            <i class="fa-solid fa-users"></i>
+            <h3>Equipe Multidisciplinar</h3>
+            <p>Contamos com profissionais de diversas áreas para ampliar a qualidade e a abrangência do atendimento.</p>
+          </div>
         </div>
-        <img src="img/Angular.svg" class="descrição__imagem" />
       </div>
-      <div class="card__botões">
-        <ul class="botões">
-          <li class="botões__item">
-            <img src="img/Favoritos.svg" alt="Favoritar livro" />
-          </li>
-          <li class="botões__item">
-            <img src="img/Compras.svg" alt="Adicionar no carrinho de compras" />
-          </li>
+    </section>
+
+    <!-- Processo -->
+    <section id="process" class="section">
+      <div class="container">
+        <h2 class="section-title">Nosso Processo</h2>
+        <p class="section-description">
+          Um fluxo organizado em etapas para garantir qualidade e eficiência na entrega do seu projeto.
+        </p>
+        <div class="timeline">
+          <div class="timeline-item">
+            <div class="timeline-icon">1</div>
+            <div class="timeline-content">
+              <h3>Envio da Demanda</h3>
+              <p>Você nos apresenta sua atividade, tema ou necessidade acadêmica, incluindo orientações e prazos.</p>
+            </div>
+          </div>
+          <div class="timeline-item">
+            <div class="timeline-icon">2</div>
+            <div class="timeline-content">
+              <h3>Análise Detalhada</h3>
+              <p>Avaliamos o material enviado, alinhando expectativas e objetivos para planejar o desenvolvimento.</p>
+            </div>
+          </div>
+          <div class="timeline-item">
+            <div class="timeline-icon">3</div>
+            <div class="timeline-content">
+              <h3>Planejamento Personalizado</h3>
+              <p>Definimos a melhor abordagem para a organização das ideias e dos conteúdos necessários.</p>
+            </div>
+          </div>
+          <div class="timeline-item">
+            <div class="timeline-icon">4</div>
+            <div class="timeline-content">
+              <h3>Suporte Contínuo</h3>
+              <p>Durante a elaboração, mantemos contato para esclarecer dúvidas, ajustar pontos e garantir alinhamento.</p>
+            </div>
+          </div>
+          <div class="timeline-item">
+            <div class="timeline-icon">5</div>
+            <div class="timeline-content">
+              <h3>Entrega de Excelência</h3>
+              <p>Finalizamos seu trabalho com clareza e organização, atendendo aos critérios estabelecidos e prazos combinados.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Depoimentos -->
+    <section id="testimonials" class="section alt-section">
+      <div class="container">
+        <h2 class="section-title">Depoimentos</h2>
+        <p class="section-description">O que nossos clientes dizem sobre nós.</p>
+        <div class="testimonial-slider">
+          <div class="testimonial-slide active">
+            <p class="testimonial-text">"A assessoria foi fundamental para o sucesso do meu trabalho. Além de organizar minhas ideias, recebi orientações valiosas que fizeram toda a diferença."</p>
+            <h4 class="testimonial-author">– Pedro, aluno de pós-graduação</h4>
+          </div>
+          <div class="testimonial-slide">
+            <p class="testimonial-text">"Profissionalismo e rapidez definem a experiência com a assessoria. Sempre acessíveis, transformaram um projeto complexo em algo descomplicado."</p>
+            <h4 class="testimonial-author">– Ana, estudante de engenharia</h4>
+          </div>
+          <div class="testimonial-slide">
+            <p class="testimonial-text">"Recebi suporte completo do início ao fim. A equipe é atenciosa e realmente se preocupa em garantir que você compreenda cada etapa do processo."</p>
+            <h4 class="testimonial-author">– Lucas, mestrando em ciências sociais</h4>
+          </div>
+        </div>
+        <div class="testimonial-controls">
+          <button class="testimonial-prev" aria-label="Anterior"><i class="fa-solid fa-chevron-left"></i></button>
+          <button class="testimonial-next" aria-label="Próximo"><i class="fa-solid fa-chevron-right"></i></button>
+        </div>
+      </div>
+    </section>
+
+    <!-- FAQ -->
+    <section id="faq" class="section">
+      <div class="container">
+        <h2 class="section-title">Perguntas Frequentes</h2>
+        <p class="section-description">Tire suas dúvidas sobre nossa assessoria acadêmica.</p>
+        <div class="faq-list">
+          <div class="faq-item">
+            <button class="faq-question">Como funciona a contratação?</button>
+            <div class="faq-answer">
+              <p>Basta nos enviar sua demanda através do formulário ou WhatsApp. Analisaremos as informações e retornaremos com um plano de trabalho e orçamento.</p>
+            </div>
+          </div>
+          <div class="faq-item">
+            <button class="faq-question">Qual o prazo de resposta?</button>
+            <div class="faq-answer">
+              <p>Nossa equipe se compromete a retornar em até 24 horas úteis para iniciar o atendimento.</p>
+            </div>
+          </div>
+          <div class="faq-item">
+            <button class="faq-question">Quais tipos de trabalhos vocês atendem?</button>
+            <div class="faq-answer">
+              <p>Avaliamos demandas de todas as áreas acadêmicas, incluindo projetos, pesquisas, TCCs, dissertações e teses.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contato -->
+    <section id="contact" class="section alt-section">
+      <div class="container">
+        <h2 class="section-title">Solicitar Orçamento</h2>
+        <p class="section-description">Entre em contato para receber um atendimento personalizado.</p>
+        <div class="contact-grid">
+          <div class="contact-card">
+            <h3>Assessoria 1</h3>
+            <p>WhatsApp: +55&nbsp;43&nbsp;99906‑6267</p>
+            <a href="https://wa.me/5543999066267" class="btn btn-secondary" target="_blank" rel="noopener">Falar no WhatsApp</a>
+            <img class="qr-code" src="https://api.qrserver.com/v1/create-qr-code/?data=https%3A%2F%2Fwa.me%2F5543999066267&size=150x150" alt="QR Code Assessoria 1" />
+            <span class="qr-label">Escaneie para falar com a Assessoria 1</span>
+          </div>
+          <div class="contact-card">
+            <h3>Assessoria 2</h3>
+            <p>WhatsApp: +55&nbsp;18&nbsp;98159‑1286</p>
+            <a href="https://wa.me/5518981591286" class="btn btn-secondary" target="_blank" rel="noopener">Falar no WhatsApp</a>
+            <img class="qr-code" src="https://api.qrserver.com/v1/create-qr-code/?data=https%3A%2F%2Fwa.me%2F5518981591286&size=150x150" alt="QR Code Assessoria 2" />
+            <span class="qr-label">Escaneie para falar com a Assessoria 2</span>
+          </div>
+          <div class="contact-form-wrapper">
+            <h3>Envie sua Mensagem</h3>
+            <!-- Atualize o atributo action com o seu endpoint Formspree ou similar -->
+            <form action="https://formspree.io/f/{seu-id}" method="POST" class="contact-form">
+              <div class="form-group">
+                <label for="name">Nome</label>
+                <input type="text" id="name" name="name" required placeholder="Seu nome" />
+              </div>
+              <div class="form-group">
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" required placeholder="Seu email" />
+              </div>
+              <div class="form-group">
+                <label for="message">Mensagem</label>
+                <textarea id="message" name="message" rows="5" required placeholder="Descreva sua demanda"></textarea>
+              </div>
+              <button type="submit" class="btn btn-primary">Enviar Mensagem</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container footer-grid">
+      <div class="footer-about">
+        <img src="assets/logo.png" alt="Logo Assessoria Acadêmica" class="footer-logo">
+        <p>Assessoria Acadêmica oferece orientação especializada e soluções eficientes para demandas de estudantes e pesquisadores.</p>
+      </div>
+      <div class="footer-links">
+        <h4>Links Rápidos</h4>
+        <ul>
+          <li><a href="#top">Início</a></li>
+          <li><a href="#about">Sobre</a></li>
+          <li><a href="#features">Diferenciais</a></li>
+          <li><a href="#process">Processo</a></li>
+          <li><a href="#contact">Orçamento</a></li>
         </ul>
-        <a href="#" class="botões__ancora">Saiba mais</a>
       </div>
-    </div>
-
-  </section>
-
-  <section class=”carrossel”>
-    <h2 class="carrossel__titulo">Mais vendidos</h2>
-    <div class="swiper">
-      <!-- Additional required wrapper -->
-      <!-- If we need pagination -->
-      <div class="swiper-pagination"></div>
-
-      <div class="swiper-wrapper">
-        <!-- Slides -->
-        <div class="swiper-slide"><img src="img/ApacheKafka.svg"
-            alt="Livro sobre apache kafka e spring boot da alura books"></div>
-        <div class="swiper-slide"><img src="img/Liderança.svg" alt="Livro sobre liderança em design da alura books">
-        </div>
-        <div class="swiper-slide"><img src="img/Javascript.svg" alt="Livro sobre javascript assertivo da alurabooks">
-        </div>
-        <div class="swiper-slide"><img src="img/Guia Front-end.svg" alt="Livro Guia front end"></div>
-        <div class="swiper-slide"><img src="img/Portugol.svg" alt="Livro sobre portugol"></div>
-        <div class="swiper-slide"><img src="img/Acessibilidade.svg" alt="livro sobre acessibilidade"></div>
-      </div>
-
-      <!-- If we need navigation buttons -->
-      <div class="swiper-button-prev"></div>
-      <div class="swiper-button-next"></div>
-    </div>
-
-    <div class="card">
-      <!-- 1º linha -->
-      <div class="card__descrição">
-        <!-- 1º coluna -->
-        <div class="descrição">
-          <img src="img/Estrelinhas.svg" alt="Avaliação 5 estrelas">
-          <h3 class="descrição__titulo">Autora do Mês</h3>
-          <h2 class="descrição__titulo-livro">Juliana Agarikov</h2>
-          <p class="descrição__texto">Analista de sistemas e escritora, Juliana é especialista em Front-End.
-          </p>
-        </div>
-        <!-- 2º coluna -->
-        <img src="img/Escritora.svg" class="descrição__imagem">
-      </div>
-
-      <!-- 2º linha -->
-      <div class="card__botões">
-        <!-- 1º coluna -->
-        <ul class="botões">
-          <li class="botões__item"><img src="img/Favoritos.svg" alt="Favoritar livro"></li>
-          <li class="botões__item"><img src="img/Compras.svg" alt="Adicionar no carrinho de compras"></li>
+      <div class="footer-social">
+        <h4>Siga-nos</h4>
+        <ul class="social-links">
+          <li><a href="#" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a></li>
+          <li><a href="#" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a></li>
+          <li><a href="#" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a></li>
         </ul>
-        <!-- 2º coluna -->
-        <a href="#" class="botões__ancora">Saiba mais</a>
       </div>
     </div>
-
-
-
-  </section>
-
-  <section class="tópicos">
-    <h2 class="tópicos__titulo">TÓPICOS VISITADOS RECENTEMENTE</h2>
-    <ul class="tópicos__lista">
-      <li class="tópicos__item"><a href="#" class="tópicos__link">Android</a></li>
-      <li class="tópicos__item">
-        <a href="#" class="tópicos__link">Marketing Digital</a>
-      </li>
-      <li class="tópicos__item">
-        <a href="#" class="tópicos__link">Agile</a>
-      </li>
-      <li class="tópicos__item">
-        <a href="#" class="tópicos__link">Startups</a>
-      </li>
-      <li class="tópicos__item">
-        <a href="#" class="tópicos__link">HTML & CSS</a>
-      </li>
-      <li class="tópicos__item">
-        <a href="#" class="tópicos__link">Python</a>
-      </li>
-      <li class="tópicos__item">
-        <a href="#" class="tópicos__link">OO</a>
-      </li>
-      <li class="tópicos__item">
-        <a href="#" class="tópicos__link">Java</a>
-      </li>
-    </ul>
-  </section>
-
-  <section class="contato">
-    <h2 class="contato__titulo">Fique por dentro das novidades!</h2>
-    <p class="contato__texto">
-      Atualizações de e-books, novos livros, promoções e outros.
-    </p>
-    <input type="email" placeholder="Cadastre seu e-mail" class="contato__email" />
-  </section>
-
-  <hr />
-
-  <footer class="rodapé">
-    <h2 class="rodapé__titulo">Grupo Alura</h2>
+    <div class="footer-bottom">
+      <p>&copy; 2026 Assessoria Acadêmica. Todos os direitos reservados.</p>
+      <a href="#top" class="back-to-top" aria-label="Voltar ao topo"><i class="fa-solid fa-arrow-up"></i></a>
+    </div>
   </footer>
 
-  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-  <script>
-    const swiper = new Swiper(".swiper", {
-      spaceBetween: 10,
-      slidesPerView: 3,
-      pagination: {
-        el: ".swiper-pagination",
-        type: "bullets",
-      },
-    });
-  </script>
+  <script src="script.js"></script>
 </body>
-
 </html>
